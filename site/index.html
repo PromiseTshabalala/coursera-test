@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="discription" content="Professinal Accountants">
+	<meta name="keywords" content="Accounting, Professional, Bookeeping, Financial Statements">
+	<meta name="author" content="Bhekumuzi P Tshabalala">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+			
+	<title>Iso Group|About</title>
+	
+
+	
+<style>
+
+		body {
+  			font-family: "Lato", sans-serif;
+  			transition: background-color .5s;
+		}
+		
+		.sidenav {
+			  height: 100%;
+			  width: 0;
+			  position: fixed;
+			  z-index: 1;
+			  top: 0;
+			  left: 0;
+			  background-color: transparent;
+			  overflow-x: hidden;
+			  transition: 0.5s;
+			  padding-top: 60px;
+		}
+
+		.sidenav a{
+			  padding: center;
+			  padding: 8px 8px 8px 32px;
+			  text-decoration: none;
+			  font-size: 25px;
+			  color: #818181;
+			  display: block;
+			  transition: 0.3s;
+		}
+
+		.sidenav a:hover {
+  			color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+			  position: absolute;
+			  top: 0;
+			  right: 10px;
+			  font-size: 36px;
+			  margin-left: 50px;
+		}
+
+		#main {
+			  transition: margin-left .5s;
+			  padding: 30px;
+			  overflow: auto;
+			  color: #f1f1f1;
+		}
+
+		@media screen and (max-height: 450px) {
+			  .sidenav {padding-top: 15px;}
+			  .sidenav a {font-size: 18px;}
+		}
+
+
+		.cont_1, .cont_2 {
+			height: 100%;
+  			margin: 0;
+  			font: 400 15px/1.8 "Lato", sans-serif;
+  			color: #777;
+			}
+
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+	  		position: relative;
+	  		opacity: 0.65;
+	  		background-attachment: fixed;
+	  		background-position: center;
+	  		background-repeat: no-repeat;
+	  		background-size: cover;
+
+		}
+
+		.bgimg-1 {
+	  		background-image: url("./img/img_parallax.jpg");
+	  		min-height: 800px;
+		}
+
+		.bgimg-2 {
+	  		background-image: url("./img/img_parallax2.jpg");
+	  		min-height: 400px;
+		}
+
+		.bgimg-3 {
+	  		background-image: url("./img/img_parallax3.jpg");
+	  		min-height: 400px;
+		}
+
+		.caption {
+	  		position: absolute;
+	  		left: 0;
+	  		top: 50%;
+	  		width: 100%;
+	  		text-align: center;
+	  		color: #000;
+		}
+
+		.caption span.border {
+	  		background-color: rgb(0,0,0,0.6);
+	  		color: #fff;
+	  		padding: 18px;
+	  		font-size: 50px;
+	  		letter-spacing: 10px;
+		}
+
+		h3 {
+	  		letter-spacing: 5px;
+	  		text-transform: uppercase;
+	  		font: 20px "Lato", sans-serif;
+	  		color: #111;
+		}
+
+			/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-device-width: 1024px) {
+	  		.bgimg-1, .bgimg-2, .bgimg-3 {
+	    			background-attachment: scroll;
+	  		}
+		}
+
+
+
+		.tablink {
+			  background-color: White;
+			  color: Black;
+			  float: left;
+			  border: none;
+			  outline: none;
+			  cursor: pointer;
+			  padding: 14px 16px;
+			  font-size: 17px;
+			  width: 30.6%;
+		}
+
+		.tablink:hover {
+ 			 background-color: White;
+		}
+
+							/* Style the tab content (and add height:100% for full page content) */
+		.tabcontent {
+			  color: black;
+			  display: none;
+			  padding: 100px 20px;
+			  height: 100%;
+		}
+
+		#Vision {background-color: white;}
+		#Mission {background-color: white;}
+		#Objectives {background-color: white;}
+
+	</style>
+
+</head>
+	
+	<div style="float:right">
+		<img class="sticky" src="./img/Iso_Logo.png">
+	</div> 
+
+	<body> 
+			<div class="cont_1">
+				<div class="bgimg-1">
+					<!----	<img class="sticky" src="./img/Iso_Logo.png" style="width:300px"> 
+						-------->
+									
+					<div id="mySidenav" class="sidenav">
+	  					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+	  					<a href="services.html"><i class="fa fa-fw fa-wrench"></i> Services</a>
+		  				<a href="projects.html"><i class="fa fa-fw fa-user"></i> Projects</a> 
+		  				<a href="about.html"><i class="fa fa-users" aria-hidden="true"></i>About Us</a> 
+                        <a href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i> Contact Us</a>
+		  				<a href="#Login"><i class="fa fa-fw fa-user"></i> Login</a>
+					</div>
+					<div id="main">
+	  					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+					
+
+						<script>
+							function openNav() {
+		  						document.getElementById("mySidenav").style.width = "250px";
+		  						document.getElementById("main").style.marginLeft = "250px";
+		  						document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+							}
+
+							function closeNav() {
+		  						document.getElementById("mySidenav").style.width = "0";
+		  						document.getElementById("main").style.marginLeft= "0";
+		  						document.body.style.backgroundColor = "white";
+							}
+						</script>
+					</div>
+
+  					<div class="caption">
+  						<span class="border">
+  									Iso LIKUBHEKILE
+  						</span>
+  					</div>
+				</div>
+
+				<div style="color:#777; background-color:white; text-align:center; padding:50px 80px; text-align:justify;">
+  	
+  					<h3 style="text-align: center">
+  								Iso Group
+  					</h3>
+  					
+					<div>
+						<button class="tablink" onclick="openPage('Vision', this, 'White')">Vision</button>
+						<button class="tablink" onclick="openPage('Mission', this, 'White')" id="defaultOpen">Mission</button>
+						<button class="tablink" onclick="openPage('Objectives', this, 'White')">Objectives</button>
+					</div>
+
+					<div id="Vision" class="tabcontent">
+  						<h3>VISION</h3>
+  						<p>Iso Group is a Solutions Company.
+						We Solution the needs of both the Corporate &amp; the individual Entity. 
+						The Firm was Established in Soweto in DATE by its Founder and Managing Partner, Josh Sithole. 
+						Khosi Sithole, Senior Partner, has consulted with the group and its clients since DATE.
+						This dynamic trio has over 30 years of experience in the field of Accounting &amp; Taxation
+						
+					</div>
+
+					<div id="Mission" class="tabcontent">
+  						<h3>MISSION</h3>
+  						<p>Iso Group is a Solutions Company.
+						Josh Sithole heads the Johannesburg Office with over #YEARS of Experience
+						in the Field of Business Consulting, Accounting and Auditing.
+						Iso Group provides a complete range of services to its clients,
+						including Accounting, Taxation and Business Consulting Services.
+					</div>
+
+					<div id="Objectives" class="tabcontent">
+  						<h3>OBJECTIVES</h3>
+  						<p>Iso Group is a Solutions Company.
+						We Solution the needs of both the Corporate &amp; the individual Entity.
+						The Firm was Established in Soweto in DATE by its Founder and Managing Partner, Josh Sithole.
+						Khosi Sithole, Senior Partner, has consulted with the group and its clients since DATE. 
+						This dynamic trio has over 30 years of experience in the field of Accounting &amp; Taxation
+					</div>
+
+					<script>
+								function openPage(pageName,elmnt,color) {
+									  var i, tabcontent, tablinks;
+									  tabcontent = document.getElementsByClassName("tabcontent");
+									  for (i = 0; i < tabcontent.length; i++) {
+									    tabcontent[i].style.display = "none";
+									  }
+									  tablinks = document.getElementsByClassName("tablink");
+									  for (i = 0; i < tablinks.length; i++) {
+									    tablinks[i].style.backgroundColor = "";
+									  }
+									  document.getElementById(pageName).style.display = "block";
+									  elmnt.style.backgroundColor = color;
+								}
+
+								// Get the element with id="defaultOpen" and click on it
+								document.getElementById("defaultOpen").click();
+					</script>
+				</div>
+
+				<div class="bgimg-2">
+					<img class="sticky" src="./img/Iso_Logo.png">
+  					<div class="caption">
+  						<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">NOMZAMO MADIKIZELA-MANDELA<br>|MUNICIPALITY|<br>|SOWETO|</span>
+  					</div>
+				</div>
+
+				<div style="position:relative;">
+  					<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  						<p>We go beyond our service offering by provisioning our clients an Oportunity to Build Value for their own clientele</p>
+  					</div>
+				</div>
+
+				<div class="bgimg-3">
+					<img class="sticky" src="./img/Iso_Logo.png">
+  					<div class="caption">
+  						<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">TOOLS|ANALYSIS|EXECUTE</span>
+  					</div>
+				</div>
+
+				<div style="position:relative;">
+  					<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  						<p>We Deploy Identify and Employ Proper Tools of Analysis in order for our clients to improve their own service offering to their Clients</p>
+  					</div>
+				</div>
+
+				<div class="bgimg-1">
+					<img class="sticky" src="./img/Iso_Logo.png">
+  					<div class="caption">
+  						<span class="border" style="background-color:transparent;font-size:50px;color:#f7f7f7;">  									
+  											ILENGE | VISION 2030 
+  						</span>
+  					</div>
+				</div>
+			</div>
+
+		<section>
+			<div class="navbar">
+				<li><a href="#"><img src="./img/facebook.png"></a></li>
+				<li><a href="#"><img src="./img/twitter.png"></a></li>
+				<li><a href="#"><img src="./img/instagram.png"></a></li>
+				<li><a href="#"><img src="./img/linkin.png"></a></li>
+			</div>
+		</section>
+		
+		<div id="scroll-to-top">
+			<i data-feather="chevrons-up"></i>
+		</div>
+
+		<script src="feather.min.js"></script>
+		<script src="main.js"></script>
+		<script>feather.replace()</script>
+		
+	</body>
+</html>

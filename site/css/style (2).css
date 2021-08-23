@@ -1,0 +1,626 @@
+body, html {
+	font-family: 15px/1.5 Arial, Helvetica, sans-serif;
+	/*
+	font-family: Arial, Helvetica, sans-serif;
+	font size: 15px;
+	line-height: 1.5;
+	*/
+	padding: 0;
+	margin: 0;
+	background-color: White;
+ /* position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh; */
+}
+
+
+							                   /* Global **/
+
+.container{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+}
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-right: 10px;
+  width: 150px;
+  /*This is where I declare the rotation/spin*/
+        animation:spin 10s linear infinite;
+}
+
+/*@keyframes spin{
+  0%{
+        transform: rotate(0deg);
+  }
+  100%{
+       transform: rotate(360deg);
+  }
+}*/
+
+
+
+
+			
+							               /* Affiliates Icons*/
+	
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/***************************
+
+ all ul will have Padding & Margin of 0 
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: White;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+***************************/
+
+
+
+
+							                     /* Navigation Bar Top*/
+
+#navbar {
+  overflow: hidden;
+
+  background-color: rgb(0, 0, 0, 0);
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #800052;
+  color: White;
+}
+
+#navbar a.active {
+  background-color: #800052;		/*#4CAF50 */
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+						                      /* Navigation Bar Botton*/
+
+/*
+.navbar {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0);
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #800052;
+}
+*/
+
+.navbar{
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   display: flex;
+   justify-content: center;
+   align-times: center;
+ }
+ 
+.navbar li {
+   list-style: none;
+ }
+ 
+ .navbar li a {
+   display: inline-block;
+   margin-left: 15px;
+   background: #484848;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-times: center;
+   border-radius: 50px;
+   transition: 0.2s ease-in-out;
+ }
+ 
+.navbar li a:hover {
+  background: #800052;
+  transform: translateY(-10px);
+  opacity: 0.65;
+}
+
+.navbar li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+
+
+.active {
+  background-color: #800052;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+
+
+							                 /* OverLay Effect **/
+
+
+.overlay {
+  position: relative;
+  bottom: 1;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 90%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+							                 /* About Us **/
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+    padding: 4px;
+    text-align: center;
+  	background-color: White;
+  	color: Black;
+}
+
+.container_2 {
+  padding: 0 16px;
+}
+
+.container_2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button_2{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #800052;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_2:hover {
+  background-color: #35424a;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+		                					/* Card Flip or Flip Card */
+
+
+.flip-card {
+  background-color: transparent;
+  width: 430px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #800052;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #800052;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Zoom Hover Zoom Hover Zoom Hover
+
+.zoom {
+  padding: 50px;
+  background: url("../img/Tech_drw.jpg");
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); 			 	IE 9 
+  -webkit-transform: scale(1.5);     		Safari 3-8 
+  transform: scale(1.5); 
+}*/ 
+
+
+								
+
+								               /* Form on an Image*/
+
+
+.bg_img {
+  /* The image used */
+  background-image: url("../img/Tech_drw.jpg");
+
+  min-height: 440px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.img_container{
+  	position: absolute;
+  	left: 0;
+  	margin: 40px;
+  	max-width: 280px;
+  	padding: 25px;
+  	background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 75%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+                                  /* Caption & Paralax Image*/
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+
+
+			             /* -----------------------------------------------------**/
+
+								                        /* Header **/
+
+
+header {
+	background: White;   /* #35424a;*/
+	color: Black;
+	padding-top: 0;
+	min-height: 70px;
+	border-bottom: #800052 5px solid;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin: 0;
+}
+
+header .highlight {
+	color: #800052;
+}
+
+.Icon{
+
+}
+
+header img{
+  float: left;
+  display: inline-block;
+  width: 15%;
+  padding: 0 auto;
+}
+
+
+							               /* showcase */
+
+
+#showcase {
+	min-height: 400px;
+	background: url("../img/Building1.jpg") no-repeat 0 -600px;
+	text-align: center;
+	color: White;
+	background-attachment: fixed;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+
+								
+							                       /* Newsletter **/
+/*
+#newsletter {
+	padding: 10px;
+	color: White;
+	background-color: #35424a;
+} */
+
+
+								
+
+								                        /* Boxes*/
+
+#boxes {
+	margin-top:20px;
+}
+
+#boxes .box {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img {
+	width: 100%;
+}
+
+								
+
+								                  /*Side Bar*/
+
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+
+}
+
+/* Main Column */
+article#main-col2 {
+	float: left;
+	width: 30%;
+}
+
+				
+							                 /*Footer Footer Footer*/
+					
+/*footer {
+	padding:20px;
+	margin-top:20px;
+	color: White;
+	background-color: #800052;
+	text-align: center;
+}*/
+
+footer {
+  color: White;
+  background-color: #800052;
+  text-align: center;
+  padding: 20px;
+  /*position: absolute;
+  bottom: 0;
+  width: 100%;*/
+}
+
+
+
+#scroll-to-top{
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 44px rgba(173, 181, 206, .75);
+  transition-property: background, color, bottom, opacity, visibility;
+  transition-duration: .25s;
+
+}
+
+#scroll-to-top[data-show="false"]{
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#scrol-to-top svg{
+  color: #121212;
+  height: 20px;
+  width: 20px;
+}
+
+#scroll-to-top:hover{
+  cursor: pointer;
+  background: 121212;
+}
+
+#scroll-to-top:hover svg{
+  color: #fff;
+}
+
+
+@media (max-width: 500px) {
+  
+}
